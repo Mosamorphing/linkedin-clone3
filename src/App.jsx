@@ -1,13 +1,17 @@
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Login from './components/Login';
 
 function App() {
   return (
-    <>
-      <div className='App'>
-        <h2> Let's build a linkedin clone! </h2>
-        </div>
-            </>
-          )
-        }
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
 
-        export default App
+export default App
