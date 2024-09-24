@@ -11,22 +11,22 @@ const Main = (props) => {
 
         <div>
             <button>
-            <img src="/images/photo-icon.svg" alt="" />
+            <img src="/images/photo-icon.png" alt="" />
             <span>Photo</span>
             </button>
 
             <button>
-            <img src="/images/video-icon.svg" alt="" />
+            <img src="/images/video-icon.png" alt="" />
             <span>Video</span>
             </button>
 
             <button>
-            <img src="/images/event-icon.svg" alt="" />
+            <img src="/images/event-icon.png" alt="" />
             <span>Event</span>
             </button>
 
             <button>
-            <img src="/images/article-icon.svg" alt="" />
+            <img src="/images/article-icon.png" alt="" />
             <span>Write article</span>
             </button>
         </div>
@@ -155,9 +155,13 @@ const ShareBox = styled(CommonCard)`
 
         button {
             img {
-                margin: 0 4px 0 --2px;
+                margin: 0 4px 0 -2px;
+                width: 24px;
+                height: 24px;
+                /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%); */
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(50%) contrast(90%);
             }
-
+            
             span {
                 color: #70b5f9;
             }
