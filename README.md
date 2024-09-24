@@ -66,6 +66,24 @@ npm run build
 - **`package.json`**: Manages project dependencies and scripts.
 - **`vite.config.js`**: Vite configuration file.
 
+### Netlify Hosting and Routing
+
+If you are hosting this project on Netlify, you'll need to configure a `_redirects` file to ensure proper routing for your single-page application (SPA).
+
+#### Steps to Set Up:
+
+1. In the `public/` directory, create a file named `_redirects` if it doesn't already exist.
+   
+2. Add the following line to the `_redirects` file:
+
+   ```plaintext
+   /*    /index.html   200
+   ```
+
+3. Redeploy the project to Netlify.
+
+This setup ensures that all routes (e.g., `/home`, `/login`, `/profile`, etc.) will correctly load `index.html`, and React Router will manage the routing on the client-side.
+
 ### Redux Integration
 
 Upcoming features will involve setting up Redux to manage state for post interactions and other complex functionalities. Detailed instructions will be provided as the implementation progresses.
